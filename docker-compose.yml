@@ -3,7 +3,7 @@ services:
     build:
       context: . # Use the Dockerfile in the current directory
       dockerfile: Dockerfile
-      image: 'eriks.day'
+    image: 'eriks.day'
     container_name: 'eriks.day' # Explicit container name
     ports:
       - '3000:3000' # Map host port 3000 to container port 3000
