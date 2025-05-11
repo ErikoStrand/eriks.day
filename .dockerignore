@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+/build
+.svelte-kit
+.env
+*.local
+*.log
+Dockerfile
+.git
+.gitignore
