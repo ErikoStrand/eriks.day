@@ -1,5 +1,3 @@
-version: '3.8' # Or your preferred version
-
 services:
   app: # Your SvelteKit application service
     build:
