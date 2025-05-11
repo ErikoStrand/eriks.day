@@ -13,7 +13,7 @@ services:
 
   nginx: # New Nginx reverse proxy service
     image: nginx:alpine
-    container_name: 'eriks.day-nginx-proxy'
+    container_name: 'eriks.day-proxy'
     restart: unless-stopped
     ports:
       - '8080:8080' # Expose Nginx HTTPS port 8080 to the host
