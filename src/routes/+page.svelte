@@ -1,6 +1,14 @@
 <script lang="ts">
 </script>
 
+<svelte:head>
+	<title>Erik's Day | What is he doing?</title>
+	<meta
+		name="description"
+		content="Erik Strandberg, the guy behind this site. Is a person who likes to program interactive and unique experience. Though he isn't really that sucessful when it comes down to it."
+	/>
+</svelte:head>
+
 <div class="flex min-h-svh flex-col items-center justify-center p-4 text-white">
 	<h1 class="mb-4 text-center text-4xl font-bold text-stone-800">
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
