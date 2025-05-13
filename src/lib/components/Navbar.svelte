@@ -3,7 +3,7 @@
 	import { fly } from 'svelte/transition';
 	let links = {
 		'/contact': 'Contact',
-		'/about': 'About me',
+		'/about': 'About',
 		'/blog': 'Blog'
 	};
 	let visible = $state(false);
