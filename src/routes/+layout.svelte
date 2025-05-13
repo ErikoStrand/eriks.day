@@ -5,5 +5,7 @@
 	let { children } = $props();
 </script>
 
-<Navbar />
-{@render children()}
+<section class="flex min-h-svh flex-col bg-neutral-900">
+	<Navbar />
+	{@render children()}
+</section>

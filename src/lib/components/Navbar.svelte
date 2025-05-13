@@ -22,7 +22,7 @@
 		{#each Object.entries(links) as [link, name], i}
 			{#if visible}
 				<a
-					in:fly={{ x: 50, duration: 500, delay: 50 * i }}
+					in:fly={{ y: -50, duration: 500, delay: 50 * i }}
 					href={link}
 					class="text-stone-50 hover:text-blue-500"
 				>

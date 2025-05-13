@@ -9,8 +9,8 @@
 	/>
 </svelte:head>
 
-<div class="flex min-h-svh flex-col items-center justify-center bg-neutral-900 p-4 text-white">
-	<h1 class="mb-4 text-center text-4xl font-bold text-stone-50">
+<div class="flex grow flex-col items-center justify-center p-4 text-white">
+	<h1 class="font-alfa mb-4 text-center text-4xl text-stone-50">
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
 </div>

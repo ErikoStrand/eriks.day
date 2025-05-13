@@ -1,1 +1,14 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-alfa: 'Alfa Slab One', 'serif';
+}
+
+@layer base {
+	@font-face {
+		font-family: 'Alfa Slab One';
+		src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf') format('truetype');
+		font-weight: 400;
+		font-style: normal;
+	}
+}
