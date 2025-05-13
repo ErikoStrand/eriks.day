@@ -1,11 +1,14 @@
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
 	import '../app.css';
+	import { fly } from 'svelte/transition';
 
-	let { children } = $props();
+	let { children, data } = $props();
 </script>
 
-<section class="flex min-h-svh flex-col bg-neutral-900">
+<main class="flex min-h-svh flex-col bg-neutral-900">
 	<Navbar />
-	{@render children()}
-</section>
+	{#key data.url}
+		<span class="flex grow" in:fly={{ x: -200, duration: 250 }}>{@render children()}</span>
+	{/key}
+</main>
