@@ -94,7 +94,7 @@
 			stack: ['Svelte', 'TailwindCSS']
 		},
 		{
-			title: 'Karriarkurvan.se, A website for a local company about their job fair. ',
+			title: 'RKS.se, A website for a non-profit association.',
 			description:
 				'A website for a non-profit association, made using Wordpress. Allowed me to learn how to use Kanban and agile development. Also allowed me to build my people skills.',
 			link: 'private',
