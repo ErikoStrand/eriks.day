@@ -9,6 +9,6 @@
 <main class="flex min-h-svh flex-col bg-neutral-900">
 	<Navbar />
 	{#key data.url}
-		<span class="flex grow" in:fly={{ x: -200, duration: 250 }}>{@render children()}</span>
+		<span class="flex grow flex-col" in:fly={{ x: -200, duration: 250 }}>{@render children()}</span>
 	{/key}
 </main>

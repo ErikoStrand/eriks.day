@@ -1,5 +1,42 @@
 <script lang="ts">
-	import Accordian from '$lib/components/Accordian.svelte';
+	import { innerWidth } from 'svelte/reactivity/window';
+	import AccordianGroup from '$lib/components/AccordianGroup.svelte';
+	let faq = [
+		[
+			{
+				title: 'What is this website?',
+				description:
+					"It's my digital realm of the collection of my works, projects, life achivements and most of the things I've done that people might want to know about me"
+			},
+			{
+				title: 'Do you ensure responsive design?',
+				description:
+					'Yes, I always do my best to make sure that my platforms work on all the standard devices.'
+			},
+			{
+				title: 'What are you most scared of?',
+				description:
+					"I'm really afraid of dying alone, and I think I'm not alone in this. Life is precious and we should really be kind to each other we never know what they are going through."
+			}
+		],
+		[
+			{
+				title: 'What services do you offfer?',
+				description:
+					'I offer whatever you want me to do. I can develop websites, create personalized experiences, can give backrubs, I am a decent chef to if you want someone to cook for you.'
+			},
+			{
+				title: 'How much do you weight?',
+				description:
+					"I weight about 105kg, But I am a big and happy man. Recently I've been grinding DiscGolf which has been really fun."
+			},
+			{
+				title: 'Can you work with anyone?',
+				description:
+					"As long as you are a decent human being, I can work with you. If you have a opprotunity for me to learn I'm all for it."
+			}
+		]
+	];
 </script>
 
 <svelte:head>
@@ -9,11 +46,24 @@
 		content="Erik Strandberg, the guy behind this site. Is a person who likes to program interactive and unique experience. Though he isn't really that sucessful when it comes down to it."
 	/>
 </svelte:head>
-
-<div class="flex grow flex-col items-center justify-center p-4 text-white">
+<header class="flex min-h-svh flex-col items-center justify-center p-4 text-white">
 	<h1 class="font-alfa mb-4 text-center text-4xl text-stone-50">
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
-	<Accordian title={'What is this website?'} description={'Its whatever erik decides to show.'}
-	></Accordian>
-</div>
+</header>
+<section class="flex justify-center p-2 md:p-4">
+	<div class="flex max-w-5xl grow flex-col gap-3 md:flex-row md:gap-5">
+		{#if (innerWidth.current ?? 800) > 768}
+			<div class="flex basis-1/2 flex-col gap-3">
+				<AccordianGroup faq={faq[0]}></AccordianGroup>
+			</div>
+			<div class="flex basis-1/2 flex-col gap-3">
+				<AccordianGroup faq={faq[1]}></AccordianGroup>
+			</div>
+		{:else}
+			<div class="flex basis-1/2 flex-col gap-3">
+				<AccordianGroup faq={faq[0].concat(faq[1])}></AccordianGroup>
+			</div>
+		{/if}
+	</div>
+</section>

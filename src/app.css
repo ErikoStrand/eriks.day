@@ -2,6 +2,20 @@
 
 @theme {
 	--font-alfa: 'Alfa Slab One', 'serif';
+	--font-nunito: 'Nunito', 'sans-serif';
+	--animate-gradient: gradientAnimation 1s ease infinite;
+
+	@keyframes gradientAnimation {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
 }
 
 @layer base {
@@ -10,5 +24,17 @@
 		src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf') format('truetype');
 		font-weight: 400;
 		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Nunito';
+		src: url('/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+		font-weight: 200 1000;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Nunito';
+		src: url('/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+		font-weight: 200 1000;
+		font-style: italic;
 	}
 }
