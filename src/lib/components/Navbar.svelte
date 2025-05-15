@@ -1,10 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
+	import NavItem from './NavItem.svelte';
 	import { fly } from 'svelte/transition';
 	let links = {
-		'/contact': 'Contact',
 		'/about': 'About',
-		'/blog': 'Blog'
+		'/blog': 'Blog',
+		'/contact': 'Contact'
 	};
 	let visible = $state(false);
 	onMount(() => {
@@ -21,13 +22,9 @@
 	<section class="flex flex-row gap-4 text-xl font-semibold">
 		{#each Object.entries(links) as [link, name], i}
 			{#if visible}
-				<a
-					in:fly={{ y: -50, duration: 500, delay: 50 * i }}
-					href={link}
-					class="text-stone-50 hover:text-blue-500"
-				>
-					{name}
-				</a>
+				<span in:fly={{ y: -50, duration: 500, delay: 50 * i }}>
+					<NavItem {link} {name}></NavItem>
+				</span>
 			{/if}
 		{/each}
 	</section>
