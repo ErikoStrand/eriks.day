@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Accordian from '$lib/components/Accordian.svelte';
 </script>
 
 <svelte:head>
@@ -13,4 +14,6 @@
 	<h1 class="font-alfa mb-4 text-center text-4xl text-stone-50">
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
+	<Accordian title={'What is this website?'} description={'Its whatever erik decides to show.'}
+	></Accordian>
 </div>
