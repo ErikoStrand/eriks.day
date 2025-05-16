@@ -51,8 +51,21 @@
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
 </header>
-<section class="flex justify-center p-2 md:p-4">
-	<div class="flex max-w-5xl grow flex-col gap-3 md:flex-row md:gap-5">
+<section class="mx-auto flex max-w-5xl flex-col gap-8 p-2 md:p-4">
+	<div class="flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
+		<h1 class="text-4xl">
+			Your Questions <div
+				class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-neutral-700 to-neutral-600 bg-[length:180%_180%] bg-clip-text font-semibold text-transparent"
+			>
+				Answered
+			</div>
+		</h1>
+		<p class="font-semibold text-neutral-400">
+			Here you can find answers to some questions people have asked me, if you have any more you can
+			contact me!
+		</p>
+	</div>
+	<div class="flex grow flex-col gap-3 md:flex-row md:gap-5">
 		{#if (innerWidth.current ?? 800) > 768}
 			<div class="flex basis-1/2 flex-col gap-3">
 				<AccordianGroup faq={faq[0]}></AccordianGroup>

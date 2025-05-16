@@ -16,7 +16,7 @@
 </script>
 
 <section
-	class="flex flex-col gap-1 rounded-lg border-[1px] border-neutral-800 bg-[linear-gradient(360deg,#262626,#1d1d1d,#131313)] bg-[length:180%_180%] px-5 py-3 shadow-md"
+	class="animate-gradient flex flex-col gap-1 rounded-lg border-[1px] border-neutral-800 bg-gradient-to-br from-neutral-950 to-neutral-800 bg-[length:180%_180%] px-5 py-3 shadow-md"
 >
 	<button
 		onclick={handleClick}
