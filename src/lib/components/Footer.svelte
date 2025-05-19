@@ -16,11 +16,13 @@
 		<div
 			class="flex flex-col justify-between gap-6 border-b-[1px] border-neutral-800 pb-6 md:flex-row"
 		>
-			<section class="flex flex-col gap-2 md:max-w-[235px]">
-				<h1 class="font-nunito text-lg font-semibold">Erik - Everything Developer</h1>
-				<p class="text-base font-normal text-neutral-400">
-					Decision making machine that drives the development the of tomorrow.
-				</p>
+			<section class="flex flex-col gap-3 md:max-w-[235px]">
+				<header>
+					<h1 class="font-nunito text-lg font-semibold">Erik - Everything Developer</h1>
+					<p class="text-base font-normal text-neutral-400">
+						Decision making machine that drives the development the of tomorrow.
+					</p>
+				</header>
 				<nav class="flex flex-row gap-3">
 					<a href="https://github.com/ErikoStrand" target="_blank"
 						><Github class={'size-6 fill-stone-300'} /></a
