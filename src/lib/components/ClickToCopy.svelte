@@ -32,7 +32,7 @@
 			in:fly={{ x: -50, duration: 150, delay: 150, easing: sineOut }}
 		>
 			<NumberFlow value={noofCopied} suffix="x"></NumberFlow>
-			{status}<Celebrate class={'size-4 fill-stone-50'}></Celebrate>
+			{status}<Celebrate class={'size-4 fill-red-500'}></Celebrate>
 		</h2>
 	{:else}
 		<h2 class=" mx-auto flex-row font-semibold" out:fly={{ x: 50, duration: 150, easing: sineOut }}>
