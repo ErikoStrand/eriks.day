@@ -2,6 +2,7 @@
 	import { innerWidth } from 'svelte/reactivity/window';
 	import AccordianGroup from '$lib/components/AccordianGroup.svelte';
 	import CircleWavy from '$lib/svgs/Circle_Wavy.svelte';
+	import ClickToCopy from '$lib/components/ClickToCopy.svelte';
 	let faq = [
 		[
 			{
@@ -51,6 +52,7 @@
 	<h1 class="font-alfa mb-4 text-center text-4xl text-stone-50">
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
+	<ClickToCopy copyText={'mail@eriks.day'} title={'Copy Email!'} message={'Copied!'}></ClickToCopy>
 </header>
 <section class="mx-auto flex max-w-5xl flex-col gap-8 p-2 md:p-4">
 	<div class=" flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
