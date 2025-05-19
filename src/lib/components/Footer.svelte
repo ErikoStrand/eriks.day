@@ -6,7 +6,7 @@
 </script>
 
 <footer
-	class="flex flex-col justify-between gap-6 border-t-[1px] border-neutral-700 p-2 *:text-stone-50 md:flex-row md:p-8"
+	class="mt-16 flex flex-col justify-between gap-6 border-t-[1px] border-neutral-700 p-2 *:text-stone-50 md:flex-row md:p-8"
 >
 	<section class="flex flex-col gap-2 md:max-w-[205px]">
 		<h1 class="font-nunito font-semibold">Erik - Everything Developer</h1>
