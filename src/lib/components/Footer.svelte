@@ -14,10 +14,10 @@
 	<div class="h-1 border-t-[1px] border-neutral-700"></div>
 	<footer class="mx-auto mt-4 flex max-w-5xl flex-col gap-6 p-2 *:text-stone-50 md:p-8">
 		<div class="flex flex-col justify-between border-b-[1px] border-neutral-800 pb-6 md:flex-row">
-			<section class="flex flex-col gap-2 md:max-w-[205px]">
-				<h1 class="font-nunito font-semibold">Erik - Everything Developer</h1>
-				<p class="text-neutral-400">
-					Making interesting decisions that drive what his life will be in the future.
+			<section class="flex flex-col gap-2 md:max-w-[235px]">
+				<h1 class="font-nunito text-lg font-semibold">Erik - Everything Developer</h1>
+				<p class="text-base font-normal text-neutral-400">
+					Decision making machine that drives the development of the great of tomorrow.
 				</p>
 				<nav class="flex flex-row gap-3">
 					<a href="https://github.com/ErikoStrand" target="_blank"
