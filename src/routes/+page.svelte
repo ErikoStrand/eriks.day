@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { innerWidth } from 'svelte/reactivity/window';
 	import AccordianGroup from '$lib/components/AccordianGroup.svelte';
+	import CircleWavy from '$lib/svgs/Circle_Wavy.svelte';
 	let faq = [
 		[
 			{
@@ -52,18 +53,21 @@
 	</h1>
 </header>
 <section class="mx-auto flex max-w-5xl flex-col gap-8 p-2 md:p-4">
-	<div class="flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
-		<h1 class="text-4xl">
-			Your Questions <div
-				class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-neutral-700 to-neutral-600 bg-[length:180%_180%] bg-clip-text font-semibold text-transparent"
-			>
-				Answered
-			</div>
-		</h1>
-		<p class="font-semibold text-neutral-400">
-			Here you can find answers to some questions people have asked me, if you have any more you can
-			contact me!
-		</p>
+	<div class=" flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
+		<div class="relative z-10 flex flex-col gap-2">
+			<h1 class="z-10 flex flex-row flex-wrap gap-2 text-4xl">
+				Your Questions <div
+					class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-neutral-700 to-neutral-600 bg-[length:180%_180%] bg-clip-text font-semibold text-transparent"
+				>
+					Answered
+				</div>
+				<CircleWavy class={'size-8 self-end fill-neutral-700'}></CircleWavy>
+			</h1>
+			<p class="z-10 font-semibold text-neutral-400">
+				Here you can find answers to some questions people have asked me, if you have any more you
+				can contact me!
+			</p>
+		</div>
 	</div>
 	<div class="flex grow flex-col gap-3 md:flex-row md:gap-5">
 		{#if (innerWidth.current ?? 800) > 768}
