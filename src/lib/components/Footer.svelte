@@ -17,7 +17,7 @@
 			<section class="flex flex-col gap-2 md:max-w-[235px]">
 				<h1 class="font-nunito text-lg font-semibold">Erik - Everything Developer</h1>
 				<p class="text-base font-normal text-neutral-400">
-					Decision making machine that drives the development of the great of tomorrow.
+					Decision making machine that drives the development the of tomorrow.
 				</p>
 				<nav class="flex flex-row gap-3">
 					<a href="https://github.com/ErikoStrand" target="_blank"
