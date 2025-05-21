@@ -19,10 +19,10 @@
 <section class="flex flex-col gap-4 p-1">
 	<header class="">
 		<h1 class="font-nunito z-10 flex flex-row flex-wrap gap-2 text-4xl font-bold text-stone-50">
-			Recent <div
+			My <div
 				class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-blue-500 to-sky-500 bg-[length:180%_180%] bg-clip-text text-transparent"
 			>
-				Works
+				Projects
 			</div>
 		</h1>
 		<p class="font-nunito font-medium text-neutral-400">
