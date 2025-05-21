@@ -55,7 +55,9 @@
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
 </header>
-<ProjectGroup {data}></ProjectGroup>
+<section class="mb-64">
+	<ProjectGroup {data}></ProjectGroup>
+</section>
 <section class="mx-auto flex max-w-5xl flex-col gap-8 p-2 md:p-4">
 	<div class=" flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
 		<div class="relative z-10 flex flex-col gap-2">

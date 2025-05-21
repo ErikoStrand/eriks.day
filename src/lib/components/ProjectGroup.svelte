@@ -17,7 +17,7 @@
 	}
 </script>
 
-<section class="mx-auto flex max-w-7xl flex-col gap-4 p-1">
+<section class="mx-auto flex max-w-7xl flex-col gap-8 p-1 md:p-3">
 	<header class="flex flex-col items-center gap-4">
 		<div class="flex flex-col items-center gap-2">
 			<h1 class="font-nunito z-10 flex flex-row flex-wrap gap-2 text-6xl font-bold text-stone-50">
@@ -45,17 +45,15 @@
 		</button>
 	</header>
 
-	<div
-		class="flex flex-col flex-wrap items-center justify-center gap-2 md:gap-8 lg:flex-row lg:items-stretch"
-	>
+	<div class="columns-xs gap-4 md:gap-8">
 		{#each projects as project, i}
 			{#if i < noofToShow}
-				<span
+				<div
 					in:fly={{ x: 100, duration: 150, delay: i * 50 }}
 					out:fly={{ x: 100, duration: 150, delay: (projects.length - 1 - i) * 50 }}
 				>
 					<Project data={project} />
-				</span>
+				</div>
 			{/if}
 		{/each}
 	</div>

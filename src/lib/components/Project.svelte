@@ -7,7 +7,7 @@
 </script>
 
 <article
-	class="animate-gradient flex max-w-sm flex-col gap-3 rounded-lg border-2 border-neutral-800 bg-gradient-to-br from-neutral-950 to-neutral-800 bg-[length:180%_180%] px-6 py-4 shadow-md"
+	class="animate-gradient mb-4 flex w-full break-inside-avoid flex-col gap-3 rounded-lg border-2 border-neutral-800 bg-gradient-to-br from-neutral-950 to-neutral-800 bg-[length:180%_180%] px-6 py-4 shadow-md md:mb-8"
 >
 	<div>
 		<h2 class="text-lg font-semibold text-stone-50">{data.title}</h2>
