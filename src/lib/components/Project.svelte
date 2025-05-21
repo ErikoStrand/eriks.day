@@ -25,21 +25,21 @@
 		</div>
 		<div class="flex flex-row gap-1 *:cursor-pointer">
 			{#if data.link !== null}
-				<a
-					href={data.link}
-					class="flex rounded-full text-sm font-semibold transition duration-200 hover:bg-blue-500"
-					rel="noopener"
-					target="_blank"
-					><Github class="size-5 fill-stone-50" />
+				<a href={data.link} class="flex text-sm font-semibold" rel="noopener" target="_blank"
+					><Github
+						class="size-5 rounded-md fill-stone-50 transition duration-200 hover:bg-blue-500"
+					/>
 				</a>
 			{/if}
 			{#if data.website !== null}
 				<a
 					href={data.website}
-					class="hover flex rounded-lg text-sm font-semibold transition duration-200 hover:bg-blue-500"
+					class="hover flex text-sm font-semibold"
 					rel="noopener"
 					target="_blank"
-					><Outgoing class="size-5 self-center fill-stone-50  " />
+					><Outgoing
+						class="size-5 self-center rounded-md  fill-stone-50 transition duration-200 hover:bg-blue-500 "
+					/>
 				</a>
 			{/if}
 		</div>
