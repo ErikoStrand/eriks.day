@@ -18,8 +18,10 @@
 		<div class="flex flex-row">
 			<Chevron class="size-5 origin-center rotate-45 text-stone-50"></Chevron>
 			<summary class="flex flex-wrap gap-2">
-				{#each data.stack as technology}
-					<span class=" text-sm font-semibold text-sky-500">{technology}</span>
+				{#each data.stack as technology, i}
+					<span class="text-sm font-semibold text-sky-500">
+						{technology}{#if i < data.stack.length - 1},{/if}
+					</span>
 				{/each}
 			</summary>
 		</div>
