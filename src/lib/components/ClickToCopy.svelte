@@ -2,7 +2,7 @@
 	import Celebrate from '$lib/svgs/Celebrate.svelte';
 	import Chevron from '$lib/svgs/Chevron.svelte';
 	import NumberFlow from '@number-flow/svelte';
-	import { sineIn, sineOut } from 'svelte/easing';
+	import { sineOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 	let { copyText, title, message } = $props();
 	let status = $state(title);
