@@ -43,7 +43,7 @@
 		class="font-nunito mt-4 rounded bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 text-stone-50 transition-colors duration-150 ease-in-out hover:bg-blue-500"
 		onclick={handleClick}
 	>
-		View {projects.length}
+		View {projects.length - 3}
 		{status}
 	</button>
 </section>
