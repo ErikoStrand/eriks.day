@@ -78,7 +78,7 @@
 	},
 	{
 		"title": "Toolie",
-		"description": "A sutle app made for schools, where you could create classes, randomize groups, create notes, timers, etc.",
+		"description": "A subtle app made for schools, where you could create classes, randomize groups, create notes, timers, etc.",
 		"link": "https://github.com/ErikoStrand/toolie-v1",
 		"website": null,
 		"stack": ["Electron", "HTML", "CSS", "JavaScript"]
