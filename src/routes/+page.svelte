@@ -2,7 +2,9 @@
 	import { innerWidth } from 'svelte/reactivity/window';
 	import AccordianGroup from '$lib/components/AccordianGroup.svelte';
 	import CircleWavy from '$lib/svgs/Circle_Wavy.svelte';
-	import ClickToCopy from '$lib/components/ClickToCopy.svelte';
+	import ProjectGroup from '$lib/components/ProjectGroup.svelte';
+	let { data } = $props();
+
 	let faq = [
 		[
 			{
@@ -53,10 +55,13 @@
 		Hello, welcome to eriks<span class="text-blue-500">.day</span>
 	</h1>
 </header>
+<section class="mb-64">
+	<ProjectGroup {data}></ProjectGroup>
+</section>
 <section class="mx-auto flex max-w-5xl flex-col gap-8 p-2 md:p-4">
 	<div class=" flex flex-col justify-between gap-4 text-stone-50 *:basis-1/2 md:flex-row">
 		<div class="relative z-10 flex flex-col gap-2">
-			<h1 class="z-10 flex flex-row flex-wrap gap-2 text-4xl">
+			<h1 class="z-10 flex flex-row flex-wrap gap-2 text-4xl font-semibold">
 				Your Questions <div
 					class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-neutral-700 to-neutral-600 bg-[length:180%_180%] bg-clip-text font-semibold text-transparent"
 				>

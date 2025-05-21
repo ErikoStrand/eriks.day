@@ -1,0 +1,100 @@
+[
+	{
+		"title": "Connect Four",
+		"description": "A simple connect four game made in Python using Pygame.",
+		"link": "https://github.com/ErikoStrand/ConnectFourPython",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "snoke (snake)",
+		"description": "A snake copy made in Python using Pygame. You could play and retry, it also collected some stats about your runs.",
+		"link": "https://github.com/ErikoStrand/snoke",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "floppy bird (Flappy Bird)",
+		"description": "A copy of the famous Flappy Bird game made in Python using Pygame. This one also had stats about your runs. And this time it also had some particles.",
+		"link": "https://github.com/ErikoStrand/floppy-bird",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "Ping Pong (With AI)",
+		"description": "A simple ping pong game made with Pygame aswell, you played against a simple AI that predicted the ball movement.",
+		"link": "https://github.com/ErikoStrand/Ping-PongAI",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "Totris (Tetris)",
+		"description": "Was suppose to be a working tetris game, but I never figured out how to rotate the blocks.",
+		"link": "https://github.com/ErikoStrand/Totris",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "Ball Bouncer",
+		"description": "My most elaborate game yet. Balls bouncing around and you the player avoid them. Your time alive was your score.",
+		"link": "https://github.com/ErikoStrand/Ball-Bouncer",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "MineSwooper (MineSweeper)",
+		"description": "My most polished game yet. Working MineSweeper with customizable board size and mine amount. And in my opinion a very polished design.",
+		"link": "https://github.com/ErikoStrand/MineSwooper",
+		"website": null,
+		"stack": ["Python", "Numpy", "Pygame"]
+	},
+	{
+		"title": "Social Media App",
+		"description": "Was the last school project we had for web server development. It was like twitter where you would post your \"Thoughts\". You could like, follow, comment etc",
+		"link": "https://github.com/ErikoStrand/wspr-1-slutproject",
+		"website": null,
+		"stack": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+	},
+	{
+		"title": "Airport Simulation",
+		"description": "A simulation of planes taking off and landing. Following their route across multiple airports. It was visualized via dots and squares. And you could click on a airplane to get some stats about that plane.",
+		"link": "https://github.com/ErikoStrand/Airport-Simulation",
+		"website": null,
+		"stack": ["Java", "JPanel"]
+	},
+	{
+		"title": "IMDb Stats ",
+		"description": "You could upload your IMDb ratings and the website would give you a breakdown of your ratings.",
+		"link": "https://github.com/ErikoStrand/Untitled-IMDB-Project-2",
+		"website": "https://untitled-imdb-project-2-erikostrands-projects.vercel.app/",
+		"stack": ["Svelte", "SvelteKit", "TailwindCSS", "MariaDB", "MySQL"]
+	},
+	{
+		"title": "Critic Party",
+		"description": "Was suppose to be a collaborative watchlist app where you would create a watchlist, and have it integrate with discord so you could vote on what to watch, set timeline for what we are watching and vote for movies, skip movies etc.",
+		"link": "https://github.com/ErikoStrand/Untitled-IMDB-Project-2",
+		"website": "https://untitled-imdb-project-2-erikostrands-projects.vercel.app/party",
+		"stack": ["Svelte", "SvelteKit", "TailwindCSS", "MariaDB", "MySQL", "Discord Auth"]
+	},
+	{
+		"title": "Toolie",
+		"description": "A subtle app made for schools, where you could create classes, randomize groups, create notes, timers, etc.",
+		"link": "https://github.com/ErikoStrand/toolie-v1",
+		"website": null,
+		"stack": ["Electron", "HTML", "CSS", "JavaScript"]
+	},
+	{
+		"title": "Karriarkurvan.se",
+		"description": "A website advertising their job fair, made with Svelte. Allowed me to work closely with my team and another company to learn how it is to work with professionals.",
+		"link": null,
+		"website": "https://www.karriarkurvan.se/",
+		"stack": ["Svelte", "TailwindCSS"]
+	},
+	{
+		"title": "RKS.se",
+		"description": "A website for a non-profit association, made using Wordpress. Allowed me to learn how to use Kanban and agile development. Also allowed me to build my people skills.",
+		"link": null,
+		"website": "https://www.rks.se/",
+		"stack": ["Wordpress"]
+	}
+]

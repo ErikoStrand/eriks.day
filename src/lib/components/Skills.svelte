@@ -24,6 +24,7 @@
 			name: 'nodejs',
 			level: 35
 		},
+		{ name: 'wordpress', level: 67 },
 		{
 			name: 'sveltekit',
 			level: 82
