@@ -15,7 +15,7 @@
 </script>
 
 <nav
-	class="flex flex-row justify-between bg-gradient-to-t from-neutral-900 to-neutral-950/90 px-2 py-2 md:px-8"
+	class="sticky top-0 z-50 flex flex-row justify-between border-b-[1px] border-neutral-700 bg-neutral-900/50 px-2 py-2 backdrop-blur-md md:px-8"
 >
 	<a href="/" class=" font-mono text-xl text-stone-50"
 		>eriks<span class="text-blue-400">.day</span></a
