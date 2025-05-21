@@ -1,126 +1,49 @@
 <script>
 	import Project from './Project.svelte';
-	let projects = [
-		{
-			title: 'Connect Four',
-			description: 'A simple connect four game made in Python using Pygame.',
-			link: 'https://github.com/ErikoStrand/ConnectFourPython',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'snoke (snake)',
-			description:
-				'A snake copy made in Python using Pygame. You could play and retry, it also collected some stats about your runs.',
-			link: 'https://github.com/ErikoStrand/snoke',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'floppy bird (Flappy Bird)',
-			description:
-				'A copy of the famous Flappy Bird game made in Python using Pygame. This one also had stats about your runs. And this time it also had some particles.',
-			link: 'https://github.com/ErikoStrand/floppy-bird',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'Ping Pong (With AI)',
-			description:
-				'A simple ping pong game made with Pygame aswell, you played against a simple AI that predicted the ball movement.',
-			link: 'https://github.com/ErikoStrand/Ping-PongAI',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'Totris (Tetris)',
-			description:
-				'Was suppose to be a working tetris game, but I never figured out how to rotate the blocks.',
-			link: 'https://github.com/ErikoStrand/Totris',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'Ball Bouncer',
-			description:
-				'My most elaborate game yet. Balls bouncing around and you the player avoid them. Your time alive was your score.',
-			link: 'https://github.com/ErikoStrand/Ball-Bouncer',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'MineSwooper (MineSweeper)',
-			description:
-				'My most polished game yet. Working MineSweeper with customizable board size and mine amount. And in my opinion a very polished design.',
-			link: 'https://github.com/ErikoStrand/MineSwooper',
-			website: null,
-			stack: ['Python', 'Numpy', 'Pygame']
-		},
-		{
-			title: 'Social Media App',
-			description:
-				'Was the last school project we had for web server development. It was like twitter where you would post your "Thoughts". You could like, follow, comment etc',
-			link: 'https://github.com/ErikoStrand/wspr-1-slutproject',
-			website: null,
-			stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL']
-		},
-		{
-			title: 'Airport Simulation',
-			description:
-				'A simulation of planes taking off and landing. Following their route across multiple airports. It was visualized via dots and squares. And you could click on a airplane to get some stats about that plane.',
-			link: 'https://github.com/ErikoStrand/Airport-Simulation',
-			website: null,
-			stack: ['Java', 'JPanel']
-		},
-		{
-			title: 'A website for your IMDb stats',
-			description:
-				'You could upload your IMDb ratings and the website would give you a breakdown of your ratings.',
-			link: 'https://github.com/ErikoStrand/Untitled-IMDB-Project-2',
-			website: 'https://untitled-imdb-project-2-erikostrands-projects.vercel.app/',
-			stack: ['Svelte', 'SvelteKit', 'TailwindCSS', 'MariaDB', 'MySQL']
-		},
-		{
-			title: 'Collaborative watchlist app',
-			description:
-				'Was suppose to be a collaborative watchlist app where you would create a watchlist, and have it integrate with discord so you could vote on what to watch, set timeline for what we are watching and vote for movies, skip movies etc.',
-			link: 'https://github.com/ErikoStrand/Untitled-IMDB-Project-2',
-			website: 'https://untitled-imdb-project-2-erikostrands-projects.vercel.app/party',
-			stack: ['Svelte', 'SvelteKit', 'TailwindCSS', 'MariaDB', 'MySQL', 'Discord Auth']
-		},
-		{
-			title: 'Toolie',
-			description:
-				'A sutle app made for schools, where you could create classes, randomize groups, create notes, timers, etc.',
-			link: 'https://github.com/ErikoStrand/toolie-v1',
-			website: null,
-			stack: ['Electron', 'HTML', 'CSS', 'JavaScript']
-		},
-		{
-			title: 'Karriarkurvan.se',
-			description:
-				'A website advertising their job fair, made with Svelte. Allowed me to work closely with my team and another company to learn how it is to work with professionals.',
-			link: null,
-			website: 'https://www.karriarkurvan.se/',
-			stack: ['Svelte', 'TailwindCSS']
-		},
-		{
-			title: 'RKS.se',
-			description:
-				'A website for a non-profit association, made using Wordpress. Allowed me to learn how to use Kanban and agile development. Also allowed me to build my people skills.',
-			link: null,
-			website: 'https://www.rks.se/',
-			stack: ['Wordpress']
+	let { data } = $props();
+	let noofToShow = $state(3);
+	let status = $state('more');
+	let projects = JSON.parse(data.projects).reverse();
+
+	function handleClick() {
+		if (noofToShow === projects.length) {
+			noofToShow = 3;
+			status = 'more';
+		} else {
+			noofToShow = projects.length;
+			status = 'less';
 		}
-	];
+	}
 </script>
 
-<section
-	class="flex flex-col items-center justify-center gap-2 md:gap-8 lg:flex-row lg:items-stretch"
->
-	{#each projects as project, i}
-		{#if i >= projects.length - 3}
-			<Project data={project} />
-		{/if}
-	{/each}
+<section class="flex flex-col gap-4 p-1">
+	<header class="">
+		<h1 class="font-nunito z-10 flex flex-row flex-wrap gap-2 text-4xl font-bold text-stone-50">
+			Recent <div
+				class="animate-gradient inline-block bg-gradient-to-r from-stone-50 via-blue-500 to-sky-500 bg-[length:180%_180%] bg-clip-text text-transparent"
+			>
+				Works
+			</div>
+		</h1>
+		<p class="font-nunito font-medium text-neutral-400">
+			My most recent projects, or the ones I'm most proud of are showcased here.
+		</p>
+	</header>
+	<div
+		class="flex flex-col flex-wrap items-center justify-center gap-2 md:gap-8 lg:flex-row lg:items-stretch"
+	>
+		{#each projects as project, i}
+			{#if i < noofToShow}
+				<Project data={project} />
+			{/if}
+		{/each}
+	</div>
+
+	<button
+		class="font-nunito mt-4 rounded bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 text-stone-50 transition-colors duration-150 ease-in-out hover:bg-blue-500"
+		onclick={handleClick}
+	>
+		View {projects.length}
+		{status}
+	</button>
 </section>

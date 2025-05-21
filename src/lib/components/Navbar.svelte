@@ -5,6 +5,7 @@
 	let links = {
 		'/about': 'About',
 		'/blog': 'Blog',
+		'/projects': 'Projects',
 		'/contact': 'Contact'
 	};
 	let visible = $state(false);
