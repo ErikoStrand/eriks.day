@@ -2,8 +2,6 @@
 	import { innerWidth } from 'svelte/reactivity/window';
 	import AccordianGroup from '$lib/components/AccordianGroup.svelte';
 	import CircleWavy from '$lib/svgs/Circle_Wavy.svelte';
-	import ProjectGroup from '$lib/components/ProjectGroup.svelte';
-	let { data } = $props();
 	let faq = [
 		[
 			{
