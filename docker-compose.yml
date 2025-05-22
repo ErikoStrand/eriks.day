@@ -27,7 +27,3 @@ services:
 
 volumes:
   nginx_logs: # Optional: define the named volume for Nginx logs
-
-# Your SvelteKit app's Dockerfile should ensure it's using an adapter
-# like @sveltejs/adapter-node and running `node build` or similar
-# to start the Node.js server listening on $HOST:$PORT (which is 0.0.0.0:3000)
